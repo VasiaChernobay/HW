@@ -1,27 +1,24 @@
 package com.company.vehiches;
 
 import com.company.PrintInfo;
-import com.company.ditals.Engine;
 import com.company.profissions.Driver;
-import com.company.profissions.Person;
-
-import java.awt.*;
 
 public class Car implements PrintInfo {
    private String carName;
    private String carMark;
     public static void main(String[] args) {
         Driver driver=new Driver("vasiliy",1);
-        SportCar sportCar=new SportCar("Nissan","350z",170);
-
+        SportCar sportCar=new SportCar("Nissan","350z",230);
+           Car car=new Car("Mazda","rx-8");
 
         sportCar.printInfo();
+        car.printInfo();
 
 
     }
-    Car(String inputCarMark,String inputCarName){
-        carMark=inputCarMark;
-        carName=inputCarName;
+    Car(String carMark,String carName){
+        this.carMark=carMark;
+        this.carName=carName;
 
     }
     @Override

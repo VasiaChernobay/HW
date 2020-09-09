@@ -5,10 +5,13 @@ import com.company.PrintInfo;
 public class SportCar extends Car implements PrintInfo {
     private int rearingSpeed;
 
-    SportCar(String inputCarMark, String inputCarName,int inputRearingSpead) {
-        super(inputCarMark, inputCarName);
-        rearingSpeed=inputRearingSpead;
+    SportCar(String carMark, String carName,int rearingSpeed) {
+        super(carMark, carName);
+        this.rearingSpeed=rearingSpeed;
     }
+
+
+
 
     @Override
     public void printInfo() {

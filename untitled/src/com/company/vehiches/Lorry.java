@@ -4,11 +4,15 @@ import com.company.PrintInfo;
 
 public class Lorry extends  Car implements PrintInfo {
  private int liftingCcapacity;
-    Lorry(String inputCarMark, String inputCarName,int inputLiftignCcapacity) {
-        super(inputCarMark, inputCarName);
-        liftingCcapacity=inputLiftignCcapacity;
 
+    Lorry(String carMark, String carName,int liftingCcapacity) {
+        super(carMark, carName);
+        this.liftingCcapacity=liftingCcapacity;
     }
+
+
+
+
 
     @Override
     public void printInfo() {

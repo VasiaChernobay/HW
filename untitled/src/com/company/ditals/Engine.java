@@ -7,11 +7,11 @@ public class Engine implements PrintInfo {
    private String manufacturer;
    private String engineName;
    private int volume;
-      Engine(int inputPower, String inputManufacturer,String inputEngineName,int inputVolume){
-          power=inputPower;
-          manufacturer=inputManufacturer;
-          engineName=inputEngineName;
-          volume=inputVolume;
+      Engine(int power, String manufacturer,String engineName,int volume){
+          this.power=power;
+          this.manufacturer=manufacturer;
+          this.engineName=engineName;
+          this.volume=volume;
       }
     @Override
     public void printInfo() {
