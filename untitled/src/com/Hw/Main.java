@@ -2,7 +2,8 @@ package com.Hw;
 
 import java.util.Scanner;
 
-public class Main {
+public class 1
+        git initMain {
     public static void main(String[] args) {
         Main main = new Main();
         main.question13();
